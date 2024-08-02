@@ -1,0 +1,409 @@
+person_standing: 0.500000 0.350000 0.020000
+person_standing_0: 0.500000 0.350000 0.020000
+person_standing_1: 0.500000 0.350000 0.020000
+person_standing_2: 0.500000 0.350000 0.020000
+person_standing_3: 0.500000 0.350000 0.020000
+person_standing_4: 0.500000 0.350000 0.020000
+person_standing_5: 0.500000 0.350000 0.020000
+person_standing_6: 0.500000 0.350000 0.020000
+person_standing_7: 0.500000 0.350000 0.020000
+asphalt_plane: 20.000000 20.000000 0.100000
+Wall_17: 20.000000 0.150000 2.500000
+Wall_19: 20.000000 0.150000 2.500000
+Wall_21: 20.000000 0.150000 2.500000
+Wall_22: 20.000000 0.150000 2.500000
+unit_box: 1.000000 1.000000 1.000000
+unit_box_clone: 1.000000 1.000000 1.000000
+unit_box_clone_clone: 1.000000 1.000000 1.000000
+unit_box_clone_clone_clone: 1.000000 1.000000 1.000000
+number1; 1.000000 1.000000 1.000000
+number2: 1.000000 1.000000 1.000000
+number3: 1.000000 1.000000 1.000000
+number4: 1.000000 1.000000 1.000000
+control_console: 1.780000 0.050000 2.602250
+Construction Cone: 0.198, 0.198, 0.428696
+Construction Cone_0: 0.198, 0.198, 0.428696
+Construction Cone_1: 0.198, 0.198, 0.428696
+Construction Cone_2: 0.198, 0.198, 0.428696
+Construction Cone_3: 0.198, 0.198, 0.428696
+Construction Cone_4: 0.198, 0.198, 0.428696
+Construction Cone_5: 0.198, 0.198, 0.428696
+Construction Cone_6: 0.198, 0.198, 0.428696
+Construction Cone_7: 0.198, 0.198, 0.428696
+Construction Cone_8: 0.198, 0.198, 0.428696
+Construction Cone_9: 0.198, 0.198, 0.428696
+Construction Cone_10: 0.198, 0.198, 0.428696
+Dumpster: 1.773333, 0.886666, 0.686666
+hoop_red: 0.300000 0.100000 5.000000
+hoop_red_0: 0.300000 0.100000 5.000000
+person_walking: 0.350000 0.750000 0.020000
+
+
+
+self.objects_data = {
+    "Dumpster": {
+        "pose": [1.10581, -9.13614, 0.051381],
+        "orientation": [-1.1e-05, 3e-06, -3.13677],
+        "size": [1.773333, 0.886666, 0.686666],  # Updated size
+    },
+    "Control Console": {
+        "pose": [0.044032, 9.47148, 0],
+        "orientation": [0, 0, 0],
+        "size": [1.780000, 0.050000, 2.602250],  # Updated size
+
+    }
+}
+
+
+
+import os
+import csv
+import time
+import cv2
+import numpy as np
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import Image
+from geometry_msgs.msg import PoseStamped
+from cv_bridge import CvBridge, CvBridgeError
+from rclpy.qos import QoSProfile
+from rclpy.qos import ReliabilityPolicy, DurabilityPolicy
+from scipy.spatial.transform import Rotation as R
+
+def euler_to_rotation_matrix(roll, pitch, yaw):
+    # Calculate rotation matrix from Euler angles
+    R_x = np.array([[1, 0, 0],
+                    [0, np.cos(roll), -np.sin(roll)],
+                    [0, np.sin(roll), np.cos(roll)]])
+
+    R_y = np.array([[np.cos(pitch), 0, np.sin(pitch)],
+                    [0, 1, 0],
+                    [-np.sin(pitch), 0, np.cos(pitch)]])
+
+    R_z = np.array([[np.cos(yaw), -np.sin(yaw), 0],
+                    [np.sin(yaw), np.cos(yaw), 0],
+                    [0, 0, 1]])
+
+    R = np.dot(R_z, np.dot(R_y, R_x))
+    return R
+
+
+class ImageSubscriber(Node):
+    def __init__(self):
+        super().__init__('image_processor')
+        # Define a custom QoS profile with the correct access to reliability and durability
+        custom_qos_profile = QoSProfile(
+            depth=1000,
+            reliability=ReliabilityPolicy.RELIABLE,
+            durability=DurabilityPolicy.VOLATILE)
+
+        # Use the custom QoS profile for the subscription
+        self.subscription = self.create_subscription(
+            Image,
+            '/drone/front/image_raw',
+            self.image_callback,
+            custom_qos_profile)
+        self.pose_subscription = self.create_subscription(
+            PoseStamped,
+            '/drone/gt_pose',
+            self.gt_pose_callback,
+            custom_qos_profile)
+        self.bridge = CvBridge()
+        self.last_save_time = time.time()
+        self.save_interval = 5  # seconds
+        self.image_folder = '/home/andrei/ros2_ws/images'
+        self.csv_file_path = '/home/andrei/ros2_ws/dataset.csv'
+        os.makedirs(self.image_folder, exist_ok=True)
+        self.csv_file = open(self.csv_file_path, 'w', newline='')
+        self.csv_writer = csv.writer(self.csv_file)
+        self.csv_writer.writerow(
+            ["timestamp", "image_name", "object_name", "x", "y", "z", "roll", "pitch", "yaw", "size_x", "size_y",
+             "size_z", "x_min_bb", "y_min_bb", "x_max_bb", "y_max_bb"])
+        self.image_counter = 0
+        self.objects_data = {
+            "asphalt_plane": {
+                "pose": [0.027118, -0.028406, 0],
+                "orientation": [0, -0, 0],
+                "size": [20.000000, 20.000000, 0.100000],
+            },
+            "control_console": {
+                "pose": [0.044032, 9.471480, 0],
+                "orientation": [0, 0, 0],
+                "size": [1.780000, 0.050000, 2.602250],
+            },
+
+            "unit_box": {
+                "pose": [9.406795, -9.399209, 0.550000],
+                "orientation": [0, 0, 0.000034],
+                "size": [1.000000, 1.000000, 1.000000],
+            },
+            "unit_box_clone": {
+                "pose": [9.424715, 9.274771, 0.550000],
+                "orientation": [0, 0, 0.000040],
+                "size": [1.000000, 1.000000, 1.000000],
+            },
+            "unit_box_clone_clone": {
+                "pose": [-9.261930, 9.274990, 0.550000],
+                "orientation": [0, 0, 0.000016],
+                "size": [1.000000, 1.000000, 1.000000],
+            },
+            "unit_box_clone_clone_clone": {
+                "pose": [-8.978432, -9.372633, 0.549995],
+                "orientation": [-0.000010, 0.000001, 0.111119],
+                "size": [1.000000, 1.000000, 1.000000],
+            },
+            "number1": {
+                "pose": [-3.443590, -9.539260, 0.400000],
+                "orientation": [0, 0, 0],
+                "size": [1.000000, 1.000000, 1.000000],
+            },
+            "number2": {
+                "pose": [-9.348060, 5.928570, 0.400000],
+                "orientation": [0, 0, 0],
+                "size": [1.000000, 1.000000, 1.000000],
+            },
+            "number3": {
+                "pose": [4.345270, 9.360890, 0.400000],
+                "orientation": [0, 0, 0],
+                "size": [1.000000, 1.000000, 1.000000],
+            },
+            "number4": {
+                "pose": [9.514570, -4.511090, 0.400000],
+                "orientation": [0, 0, 0],
+                "size": [1.000000, 1.000000, 1.000000],
+            },
+            "Construction Cone": {
+                "pose": [3.440740, 0.667633, 0.049999],
+                "orientation": [-0.000002, 0.000002, -0.004192],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_0": {
+                "pose": [2.936450, 0.915504, 0.050000],
+                "orientation": [0, 0, -0.001118],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_1": {
+                "pose": [2.419270, 1.061460, 0.049991],
+                "orientation": [0, -0.000002, 0.000614],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_2": {
+                "pose": [1.916210, 1.225750, 0.050000],
+                "orientation": [0, 0, -0.000372],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_3": {
+                "pose": [1.412490, 1.358500, 0.049991],
+                "orientation": [0, 0, -0.014740],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_4": {
+                "pose": [0.906406, 1.475050, 0.050000],
+                "orientation": [0, 0, 0.002556],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_5": {
+                "pose": [0.377529, 1.550320, 0.050001],
+                "orientation": [0, -0.000002, -0.000256],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_6": {
+                "pose": [-0.141692, 1.602430, 0.050000],
+                "orientation": [0, 0, 0],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_7": {
+                "pose": [-0.669365, 1.771780, 0.049990],
+                "orientation": [-0.000002, 0, -0.000256],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_8": {
+                "pose": [-1.185310, 1.961130, 0.050000],
+                "orientation": [0.000002, -0.000002, 0],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_9": {
+                "pose": [-1.720400, 2.194210, 0.049992],
+                "orientation": [0, 0.000002, 0],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Construction Cone_10": {
+                "pose": [-2.251430, 2.447520, 0.050000],
+                "orientation": [0, 0, 0],
+                "size": [0.198, 0.198, 0.428696],
+            },
+            "Dumpster": {
+                "pose": [1.105810, -9.136140, 0.051370],
+                "orientation": [0.000010, 0, -3.136771],
+                "size": [1.773333, 0.886666, 0.686666],
+            },
+            "hoop_red": {
+                "pose": [-3.397180, -10.136400, 0],
+                "orientation": [0, 0, 0],
+                "size": [0.300000, 0.100000, 5.000000],
+            },
+            "hoop_red_0": {
+                "pose": [-9.971850, 3.162810, 0],
+                "orientation": [0, 0, -1.556320],
+                "size": [0.300000, 0.100000, 5.000000],
+            },
+            "person_standing": {
+                "pose": [0.739916, -7.874418, 0.050000],
+                "orientation": [0, -0.000002, 0.001970],
+                "size": [0.500000, 0.350000, 0.020000],
+            },
+            "person_walking": {
+                "pose": [-7.531469, 5.773241, 0.049999],
+                "orientation": [0, 0.000006, 0.005452],
+                "size": [0.350000, 0.750000, 0.020000],
+            },
+            "person_standing_0": {
+                "pose": [0.592537, 8.466297, 0.050000],
+                "orientation": [0, -0.000002, -3.140959],
+                "size": [0.500000, 0.350000, 0.020000],
+            },
+            "person_standing_1": {
+                "pose": [-0.195836, 2.403852, 0.050000],
+                "orientation": [0, 0.000002, 0.001718],
+                "size": [0.500000, 0.350000, 0.020000],
+            },
+            "person_standing_2": {
+                "pose": [-9.561253, -8.743303, 0.294097],
+                "orientation": [-1.636140, 0.909863, 0.015181],
+                "size": [0.500000, 0.350000, 0.020000],
+            },
+            "person_standing_3": {
+                "pose": [1.827380, 6.648900, 0.000537],
+                "orientation": [0, 0, 0],
+                "size": [0.500000, 0.350000, 0.020000],
+            },
+            "person_standing_4": {
+                "pose": [-2.140890, 5.534660, 0.002202],
+                "orientation": [0, 0, 0],
+                "size": [0.500000, 0.350000, 0.020000],
+            },
+            "person_standing_5": {
+                "pose": [-2.494090, 3.011030, -0.007182],
+                "orientation": [0, 0, 0],
+                "size": [0.500000, 0.350000, 0.020000],
+            },
+            "person_standing_6": {
+                "pose": [4.132250, 5.527540, 0.007169],
+                "orientation": [0, 0, 0],
+                "size": [0.500000, 0.350000, 0.020000],
+            },
+            "person_standing_7": {
+                "pose": [-3.036670, -5.568780, -0.009657],
+                "orientation": [0, 0, 0],
+                "size": [0.500000, 0.350000, 0.020000],
+            },
+        }
+
+        #Camera parameters
+        self.image_width = 640
+        self.image_height = 360
+        self.horizontal_fov = 2.09  # From URDF
+        self.focal_length_x = self.image_width / (2 * np.tan(self.horizontal_fov / 2))
+        self.focal_length_y = self.focal_length_x  # Assuming square pixels
+        self.c_x = self.image_width / 2
+        self.c_y = self.image_height / 2
+
+        # Camera intrinsic matrix
+        self.K = np.array([[self.focal_length_x, 0, self.c_x],
+                           [0, self.focal_length_y, self.c_y],
+                           [0, 0, 1]])
+
+        # Initialize extrinsic parameters (will be updated based on drone's pose)
+        self.R = np.eye(3)
+        self.t = np.zeros((3, 1))
+
+    def image_callback(self, msg):
+        try:
+            cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+        except CvBridgeError as e:
+            self.get_logger().error(f"Could not convert ROS Image message to OpenCV image: {str(e)}")
+            return
+
+        # Process the image here (e.g., draw 3D points projected onto the 2D image)
+        processed_image = self.process_and_draw_objects(cv_image)
+
+        # Show the image with points drawn on objects
+        cv2.imshow("Image with Objects", processed_image)
+        cv2.waitKey(1)
+
+    def gt_pose_callback(self, msg):
+        # Extract position from the PoseStamped message
+        self.t = np.array([[msg.pose.position.x],
+                           [msg.pose.position.y],
+                           [msg.pose.position.z]])
+
+        # Extract orientation from the PoseStamped message and convert to Euler angles
+        quaternion = (msg.pose.orientation.x,
+                      msg.pose.orientation.y,
+                      msg.pose.orientation.z,
+                      msg.pose.orientation.w)
+        # Convert quaternion to Euler angles
+        euler = R.from_quat(quaternion).as_euler('xyz')
+        roll, pitch, yaw = euler
+        # Update the rotation matrix using the converted Euler angles
+        self.R = euler_to_rotation_matrix(roll, pitch, yaw)
+
+    def update_camera_projection_matrix(self):
+        # Update your camera projection matrix here if necessary
+        pass
+
+    def process_and_draw_objects(self, image):
+        # Iterate over each object and draw its position on the image
+        for object_name, data in self.objects_data.items():
+            # Project the object's position (pose) from 3D to 2D
+            pose_3d = np.array(data["pose"])
+            points_2d = self.project_3d_points_to_2d(self.objects_data)
+
+            if points_2d.size > 0:  # Check if any points were successfully projected
+                point_2d = points_2d[0]  # Access the first (and in this case, only) point
+                # Draw the point on the image
+                cv2.circle(image, (int(point_2d[0]), int(point_2d[1])), 5, (0, 255, 0), -1)
+            else:
+                # Optionally, handle the case where no points are returned
+                print(f"Warning: No projection for {object_name}. It may be out of view or too close to the camera.")
+
+        return image
+
+    def project_3d_points_to_2d(self, object_data):
+        points_2d = []
+        for object_name, data in object_data.items():
+            pose_3d = np.array(data["pose"]).reshape((3, 1))
+
+            # Flip Y-axis for Gazebo to ROS coordinate transformation
+            pose_3d[1] = -pose_3d[1]  # Now pose_3d follows ROS conventions
+
+            # Transform the object's pose to the camera coordinate frame
+            pose_cam = np.dot(self.R, pose_3d) + self.t
+
+            if 0.1 < pose_cam[2] < 100:  # Near and far clipping planes from URDF
+                point_2d_homogeneous = np.dot(self.K, pose_cam)
+                point_2d = point_2d_homogeneous[:2] / point_2d_homogeneous[2]
+                x_img, y_img = point_2d.flatten()
+
+                if 0 <= x_img < self.image_width and 0 <= y_img < self.image_height:
+                    points_2d.append([x_img, y_img])
+                    print(f"Object {object_name} is within the camera view at 2D pixel coordinates: {x_img}, {y_img}")
+                else:
+                    print(f"Object {object_name} is out of the camera view.")
+            else:
+                print(f"Warning: {object_name} is behind the camera or too far.")
+
+        return np.array(points_2d)
+
+
+# ROS2 Node execution
+def main(args=None):
+    rclpy.init(args=args)
+    image_subscriber = ImageSubscriber()
+    rclpy.spin(image_subscriber)
+    image_subscriber.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()

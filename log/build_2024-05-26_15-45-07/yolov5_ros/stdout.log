@@ -1,0 +1,33 @@
+running egg_info
+creating ../../build/yolov5_ros/yolov5_ros.egg-info
+writing ../../build/yolov5_ros/yolov5_ros.egg-info/PKG-INFO
+writing dependency_links to ../../build/yolov5_ros/yolov5_ros.egg-info/dependency_links.txt
+writing entry points to ../../build/yolov5_ros/yolov5_ros.egg-info/entry_points.txt
+writing requirements to ../../build/yolov5_ros/yolov5_ros.egg-info/requires.txt
+writing top-level names to ../../build/yolov5_ros/yolov5_ros.egg-info/top_level.txt
+writing manifest file '../../build/yolov5_ros/yolov5_ros.egg-info/SOURCES.txt'
+reading manifest file '../../build/yolov5_ros/yolov5_ros.egg-info/SOURCES.txt'
+writing manifest file '../../build/yolov5_ros/yolov5_ros.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/andrei/ros2_ws/build/yolov5_ros/build
+creating /home/andrei/ros2_ws/build/yolov5_ros/build/lib
+creating /home/andrei/ros2_ws/build/yolov5_ros/build/lib/yolov5_ros
+copying yolov5_ros/object_detector.py -> /home/andrei/ros2_ws/build/yolov5_ros/build/lib/yolov5_ros
+copying yolov5_ros/__init__.py -> /home/andrei/ros2_ws/build/yolov5_ros/build/lib/yolov5_ros
+running install
+running install_lib
+creating /home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros
+copying /home/andrei/ros2_ws/build/yolov5_ros/build/lib/yolov5_ros/object_detector.py -> /home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros
+copying /home/andrei/ros2_ws/build/yolov5_ros/build/lib/yolov5_ros/__init__.py -> /home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros
+byte-compiling /home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros/object_detector.py to object_detector.cpython-310.pyc
+byte-compiling /home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying package.xml -> /home/andrei/ros2_ws/install/yolov5_ros/share/yolov5_ros
+creating /home/andrei/ros2_ws/install/yolov5_ros/share/yolov5_ros/launch
+copying launch/yolov5_launch.py -> /home/andrei/ros2_ws/install/yolov5_ros/share/yolov5_ros/launch
+running install_egg_info
+Copying ../../build/yolov5_ros/yolov5_ros.egg-info to /home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros-0.0.1-py3.10.egg-info
+running install_scripts
+Installing object_detector script to /home/andrei/ros2_ws/install/yolov5_ros/lib/yolov5_ros
+writing list of installed files to '/home/andrei/ros2_ws/build/yolov5_ros/install.log'

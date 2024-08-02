@@ -1,0 +1,26 @@
+[0.321s] Invoking command in '/home/andrei/ros2_ws/build/point_cloud_transformer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble /usr/bin/cmake --build /home/andrei/ros2_ws/build/point_cloud_transformer -- -j16 -l16
+[0.502s] [35m[1mConsolidate compiler generated dependencies of target point_cloud_transformer_node[0m
+[0.502s] [ 50%] [32mBuilding CXX object CMakeFiles/point_cloud_transformer_node.dir/src/point_cloud_transformer_node.cpp.o[0m
+[5.998s] [100%] [32m[1mLinking CXX executable point_cloud_transformer_node[0m
+[6.291s] [100%] Built target point_cloud_transformer_node
+[6.298s] Invoked command in '/home/andrei/ros2_ws/build/point_cloud_transformer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble /usr/bin/cmake --build /home/andrei/ros2_ws/build/point_cloud_transformer -- -j16 -l16
+[6.314s] Invoking command in '/home/andrei/ros2_ws/build/point_cloud_transformer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble /usr/bin/cmake --install /home/andrei/ros2_ws/build/point_cloud_transformer
+[6.318s] -- Install configuration: ""
+[6.318s] -- Installing: /home/andrei/ros2_ws/install/point_cloud_transformer/lib/point_cloud_transformer/point_cloud_transformer_node
+[6.321s] -- Set runtime path of "/home/andrei/ros2_ws/install/point_cloud_transformer/lib/point_cloud_transformer/point_cloud_transformer_node" to ""
+[6.321s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/ament_index/resource_index/package_run_dependencies/point_cloud_transformer
+[6.321s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/ament_index/resource_index/parent_prefix_path/point_cloud_transformer
+[6.322s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/environment/ament_prefix_path.sh
+[6.322s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/environment/ament_prefix_path.dsv
+[6.322s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/environment/path.sh
+[6.322s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/environment/path.dsv
+[6.322s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/local_setup.bash
+[6.322s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/local_setup.sh
+[6.322s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/local_setup.zsh
+[6.322s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/local_setup.dsv
+[6.322s] -- Installing: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/package.dsv
+[6.322s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/ament_index/resource_index/packages/point_cloud_transformer
+[6.322s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/cmake/point_cloud_transformerConfig.cmake
+[6.323s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/cmake/point_cloud_transformerConfig-version.cmake
+[6.323s] -- Up-to-date: /home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/package.xml
+[6.323s] Invoked command in '/home/andrei/ros2_ws/build/point_cloud_transformer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble /usr/bin/cmake --install /home/andrei/ros2_ws/build/point_cloud_transformer

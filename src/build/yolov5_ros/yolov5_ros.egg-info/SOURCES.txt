@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../build/yolov5_ros/yolov5_ros.egg-info/PKG-INFO
+../build/yolov5_ros/yolov5_ros.egg-info/SOURCES.txt
+../build/yolov5_ros/yolov5_ros.egg-info/dependency_links.txt
+../build/yolov5_ros/yolov5_ros.egg-info/entry_points.txt
+../build/yolov5_ros/yolov5_ros.egg-info/requires.txt
+../build/yolov5_ros/yolov5_ros.egg-info/top_level.txt
+../build/yolov5_ros/yolov5_ros.egg-info/zip-safe
+launch/yolov5_launch.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+yolov5_ros/__init__.py
+yolov5_ros/object_detector.py

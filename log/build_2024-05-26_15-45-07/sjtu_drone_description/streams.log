@@ -1,0 +1,194 @@
+[0.412s] Invoking command in '/home/andrei/ros2_ws/build/sjtu_drone_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble /usr/bin/cmake /home/andrei/ros2_ws/sjtu_drone/sjtu_drone_description -DCMAKE_INSTALL_PREFIX=/home/andrei/ros2_ws/install/sjtu_drone_description
+[0.442s] -- The C compiler identification is GNU 9.5.0
+[0.477s] -- The CXX compiler identification is GNU 9.5.0
+[0.481s] -- Detecting C compiler ABI info
+[0.522s] -- Detecting C compiler ABI info - done
+[0.526s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.526s] -- Detecting C compile features
+[0.526s] -- Detecting C compile features - done
+[0.528s] -- Detecting CXX compiler ABI info
+[0.578s] -- Detecting CXX compiler ABI info - done
+[0.584s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.584s] -- Detecting CXX compile features
+[0.585s] -- Detecting CXX compile features - done
+[0.586s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.586s] -- Checking for module 'OGRE'
+[0.593s] --   Found OGRE, version 1.9.0
+[0.612s] -- Checking for module 'OGRE-Terrain'
+[0.619s] --   Found OGRE-Terrain, version 1.9.0
+[0.641s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.939s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.991s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.995s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.018s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.021s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.028s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.035s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.047s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.090s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.091s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.154s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.172s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.203s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.209s] -- Looking for pthread.h
+[1.253s] -- Looking for pthread.h - found
+[1.253s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.298s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.299s] -- Found Threads: TRUE  
+[1.395s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.403s] -- Checking for module 'bullet>=2.82'
+[1.410s] --   Found bullet, version 3.05
+[1.470s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.498s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.510s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.527s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.535s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.538s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.542s] -- Searching for dependencies of ignition-math6
+[1.543s] -- Looking for OGRE...
+[1.543s] -- OGRE_PREFIX_WATCH changed.
+[1.547s] -- Checking for module 'OGRE'
+[1.555s] --   Found OGRE, version 1.9.0
+[1.575s] -- Found Ogre Ghadamon (1.9.0)
+[1.588s] -- Looking for OGRE_Paging...
+[1.592s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.592s] -- Looking for OGRE_Terrain...
+[1.595s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.595s] -- Looking for OGRE_Property...
+[1.598s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.598s] -- Looking for OGRE_RTShaderSystem...
+[1.602s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.602s] -- Looking for OGRE_Volume...
+[1.605s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.605s] -- Looking for OGRE_Overlay...
+[1.608s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.673s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.674s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.674s] -- Searching for dependencies of ignition-transport8
+[1.685s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.691s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.694s] -- Checking for module 'libzmq >= 4'
+[1.702s] --   Found libzmq , version 4.3.4
+[1.723s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.727s] -- Checking for module 'uuid'
+[1.735s] --   Found uuid, version 2.37.2
+[1.753s] -- Found UUID: TRUE  
+[1.754s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.755s] -- Searching for dependencies of ignition-msgs5
+[1.767s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.770s] -- Checking for module 'tinyxml2'
+[1.778s] --   Found tinyxml2, version 9.0.0
+[1.799s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.800s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.800s] -- Searching for dependencies of ignition-common3
+[1.800s] -- Looking for dlfcn.h - found
+[1.801s] -- Looking for libdl - found
+[1.802s] -- Found DL: TRUE  
+[1.809s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.809s] -- Searching for <ignition-common3> component [graphics]
+[1.811s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.811s] -- Searching for dependencies of ignition-common3-graphics
+[1.811s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.813s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.813s] -- Searching for dependencies of ignition-fuel_tools4
+[1.863s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.869s] -- Checking for module 'jsoncpp'
+[1.877s] --   Found jsoncpp, version 1.9.5
+[1.897s] -- Found JSONCPP: TRUE  
+[1.901s] -- Checking for module 'libzip'
+[1.908s] --   Found libzip, version 1.7.3
+[1.928s] -- Found ZIP: TRUE  
+[1.928s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.928s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.928s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.930s] -- Gazebo version: 11.10
+[1.930s] -- Checking for module 'tbb'
+[1.938s] --   Found tbb, version 2021.5.0
+[1.960s] -- Found gazebo_plugins: 3.7.0 (/opt/ros/humble/share/gazebo_plugins/cmake)
+[2.141s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.252s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.302s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.302s] -- Configured cppcheck include dirs: /home/andrei/ros2_ws/sjtu_drone/sjtu_drone_description/include;$<BUILD_INTERFACE:/home/andrei/ros2_ws/sjtu_drone/sjtu_drone_description/include>
+[2.302s] -- Configured cppcheck exclude dirs and/or files: 
+[2.303s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.303s] -- Added test 'lint_cmake' to check CMake code style
+[2.304s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.305s] -- Added test 'uncrustify' to check C / C++ code style
+[2.305s] -- Configured uncrustify additional arguments: 
+[2.305s] -- Added test 'xmllint' to check XML markup files
+[2.307s] -- Configuring done
+[2.324s] -- Generating done
+[2.326s] -- Build files have been written to: /home/andrei/ros2_ws/build/sjtu_drone_description
+[2.336s] Invoked command in '/home/andrei/ros2_ws/build/sjtu_drone_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble /usr/bin/cmake /home/andrei/ros2_ws/sjtu_drone/sjtu_drone_description -DCMAKE_INSTALL_PREFIX=/home/andrei/ros2_ws/install/sjtu_drone_description
+[2.337s] Invoking command in '/home/andrei/ros2_ws/build/sjtu_drone_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble /usr/bin/cmake --build /home/andrei/ros2_ws/build/sjtu_drone_description -- -j16 -l16
+[2.370s] [ 66%] [32mBuilding CXX object CMakeFiles/plugin_drone.dir/src/pid_controller.cpp.o[0m
+[2.370s] [ 66%] [32mBuilding CXX object CMakeFiles/plugin_drone.dir/src/plugin_drone.cpp.o[0m
+[18.634s] [100%] [32m[1mLinking CXX shared library /home/andrei/ros2_ws/sjtu_drone/sjtu_drone_description/plugins/libplugin_drone.so[0m
+[19.673s] [100%] Built target plugin_drone
+[19.680s] Invoked command in '/home/andrei/ros2_ws/build/sjtu_drone_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble /usr/bin/cmake --build /home/andrei/ros2_ws/build/sjtu_drone_description -- -j16 -l16
+[19.696s] Invoking command in '/home/andrei/ros2_ws/build/sjtu_drone_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble /usr/bin/cmake --install /home/andrei/ros2_ws/build/sjtu_drone_description
+[19.701s] -- Install configuration: ""
+[19.701s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/include
+[19.701s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/include/pid_controller.h
+[19.701s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/include/plugin_drone.h
+[19.701s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/lib/libplugin_drone.so
+[19.712s] -- Set runtime path of "/home/andrei/ros2_ws/install/sjtu_drone_description/lib/libplugin_drone.so" to ""
+[19.712s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/environment/library_path.sh
+[19.712s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/environment/library_path.dsv
+[19.713s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/models
+[19.713s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/models/sjtu_drone
+[19.713s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/models/sjtu_drone/model.config
+[19.713s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/models/sjtu_drone/quadrotor_4.stl
+[19.713s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/models/sjtu_drone/sjtu_drone.sdf
+[19.713s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/models/sjtu_drone/quadrotor_4.dae
+[19.713s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/models/database.config
+[19.713s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf
+[19.714s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/build
+[19.714s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/build/COLCON_IGNORE
+[19.714s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/build/.built_by
+[19.714s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/log
+[19.714s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/log/COLCON_IGNORE
+[19.714s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/log/latest_build
+[19.714s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/log/latest
+[19.714s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/log/build_2024-05-08_20-07-16
+[19.714s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/log/build_2024-05-08_20-07-16/logger_all.log
+[19.714s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/log/build_2024-05-08_20-07-16/events.log
+[19.715s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/sjtu_drone.urdf.xacro
+[19.715s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install
+[19.715s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/.colcon_install_layout
+[19.715s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/local_setup.sh
+[19.715s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/setup.zsh
+[19.715s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/COLCON_IGNORE
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/_local_setup_util_ps1.py
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/local_setup.bash
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/_local_setup_util_sh.py
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/setup.ps1
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/local_setup.zsh
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/setup.sh
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/local_setup.ps1
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/install/setup.bash
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/urdf/sjtu_drone.urdf
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/worlds
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/worlds/data
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/worlds/playground.world
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/ament_index/resource_index/package_run_dependencies/sjtu_drone_description
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/ament_index/resource_index/parent_prefix_path/sjtu_drone_description
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/environment/ament_prefix_path.sh
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/environment/ament_prefix_path.dsv
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/environment/path.sh
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/environment/path.dsv
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/local_setup.bash
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/local_setup.sh
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/local_setup.zsh
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/local_setup.dsv
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/package.dsv
+[19.716s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/ament_index/resource_index/packages/sjtu_drone_description
+[19.717s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/cmake/export_sjtu_drone_descriptionExport.cmake
+[19.717s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/cmake/export_sjtu_drone_descriptionExport-noconfig.cmake
+[19.717s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/cmake/ament_cmake_export_include_directories-extras.cmake
+[19.717s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/cmake/ament_cmake_export_libraries-extras.cmake
+[19.717s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/cmake/ament_cmake_export_targets-extras.cmake
+[19.717s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/cmake/sjtu_drone_descriptionConfig.cmake
+[19.717s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/cmake/sjtu_drone_descriptionConfig-version.cmake
+[19.717s] -- Installing: /home/andrei/ros2_ws/install/sjtu_drone_description/share/sjtu_drone_description/package.xml
+[19.717s] Invoked command in '/home/andrei/ros2_ws/build/sjtu_drone_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble /usr/bin/cmake --install /home/andrei/ros2_ws/build/sjtu_drone_description

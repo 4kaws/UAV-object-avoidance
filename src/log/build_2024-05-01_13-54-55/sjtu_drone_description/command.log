@@ -1,0 +1,1 @@
+Invoking command in '/home/andrei/ros2_ws/src/build/sjtu_drone_description': /usr/bin/cmake /home/andrei/ros2_ws/src/sjtu_drone/sjtu_drone_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/andrei/ros2_ws/src/install/sjtu_drone_description

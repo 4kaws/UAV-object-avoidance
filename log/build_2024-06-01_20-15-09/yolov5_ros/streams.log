@@ -1,0 +1,40 @@
+[1.082s] Invoking command in '/home/andrei/ros2_ws/src/yolov5_ros': PYTHONPATH=/home/andrei/ros2_ws/build/yolov5_ros/prefix_override:/home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolov5_ros build --build-base /home/andrei/ros2_ws/build/yolov5_ros/build install --record /home/andrei/ros2_ws/build/yolov5_ros/install.log --single-version-externally-managed
+[1.221s] running egg_info
+[1.231s] writing ../../build/yolov5_ros/yolov5_ros.egg-info/PKG-INFO
+[1.231s] writing dependency_links to ../../build/yolov5_ros/yolov5_ros.egg-info/dependency_links.txt
+[1.231s] writing entry points to ../../build/yolov5_ros/yolov5_ros.egg-info/entry_points.txt
+[1.231s] writing requirements to ../../build/yolov5_ros/yolov5_ros.egg-info/requires.txt
+[1.231s] writing top-level names to ../../build/yolov5_ros/yolov5_ros.egg-info/top_level.txt
+[1.251s] reading manifest file '../../build/yolov5_ros/yolov5_ros.egg-info/SOURCES.txt'
+[1.252s] writing manifest file '../../build/yolov5_ros/yolov5_ros.egg-info/SOURCES.txt'
+[1.252s] running build
+[1.252s] running build_py
+[1.253s] copying yolov5_ros/object_detector.py -> /home/andrei/ros2_ws/build/yolov5_ros/build/lib/yolov5_ros
+[1.254s] copying yolov5_ros/__init__.py -> /home/andrei/ros2_ws/build/yolov5_ros/build/lib/yolov5_ros
+[1.254s] running install
+[1.254s] /home/andrei/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.254s] !!
+[1.255s] 
+[1.255s]         ********************************************************************************
+[1.255s]         Please avoid running ``setup.py`` directly.
+[1.255s]         Instead, use pypa/build, pypa/installer or other
+[1.255s]         standards-based tools.
+[1.255s] 
+[1.255s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.255s]         ********************************************************************************
+[1.255s] 
+[1.255s] !!
+[1.255s]   self.initialize_options()
+[1.260s] running install_lib
+[1.269s] copying /home/andrei/ros2_ws/build/yolov5_ros/build/lib/yolov5_ros/object_detector.py -> /home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros
+[1.270s] byte-compiling /home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros/object_detector.py to object_detector.cpython-310.pyc
+[1.273s] running install_data
+[1.281s] copying package.xml -> /home/andrei/ros2_ws/install/yolov5_ros/share/yolov5_ros
+[1.281s] copying launch/yolov5_launch.py -> /home/andrei/ros2_ws/install/yolov5_ros/share/yolov5_ros/launch
+[1.282s] running install_egg_info
+[1.293s] removing '/home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros-0.0.1-py3.10.egg-info' (and everything under it)
+[1.293s] Copying ../../build/yolov5_ros/yolov5_ros.egg-info to /home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros-0.0.1-py3.10.egg-info
+[1.294s] running install_scripts
+[1.368s] Installing object_detector script to /home/andrei/ros2_ws/install/yolov5_ros/lib/yolov5_ros
+[1.369s] writing list of installed files to '/home/andrei/ros2_ws/build/yolov5_ros/install.log'
+[1.391s] Invoked command in '/home/andrei/ros2_ws/src/yolov5_ros' returned '0': PYTHONPATH=/home/andrei/ros2_ws/build/yolov5_ros/prefix_override:/home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolov5_ros build --build-base /home/andrei/ros2_ws/build/yolov5_ros/build install --record /home/andrei/ros2_ws/build/yolov5_ros/install.log --single-version-externally-managed

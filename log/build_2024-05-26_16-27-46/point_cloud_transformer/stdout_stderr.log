@@ -1,0 +1,41 @@
+[35m[1mConsolidate compiler generated dependencies of target point_cloud_transformer_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/point_cloud_transformer_node.dir/src/point_cloud_transformer_node.cpp.o[0m
+In file included from [01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_sensor_msgs/tf2_sensor_msgs.hpp instead [[01;35m[K-Wcpp[m[K]
+   32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_sensor_msgs/tf2_sensor_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:60:30:[m[K [01;31m[Kerror: [m[K‘[01m[KCreateTimerROS[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+   60 |     std::shared_ptr<tf2_ros::[01;31m[KCreateTimerROS[m[K> timer_interface;
+      |                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:60:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   60 |     std::shared_ptr<tf2_ros::CreateTimerROS[01;31m[K>[m[K timer_interface;
+      |                                            [01;31m[K^[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:[m[K In constructor ‘[01m[KPointCloudTransformer::PointCloudTransformer()[m[K’:
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:14:53:[m[K [01;31m[Kerror: [m[K‘[01m[KCreateTimerROS[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+   14 |         timer_interface = std::make_shared<tf2_ros::[01;31m[KCreateTimerROS[m[K>(
+      |                                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:17:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeTimersInterface::SharedPtr)[m[K’
+   17 |         [01;31m[K)[m[K;
+      |         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:716:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  716 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:716:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:17:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   17 |         [01;31m[K)[m[K;
+      |         [01;31m[K^[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:21:45:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint[m[K’ to ‘[01m[Ktf2_ros::CreateTimerInterface::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<tf2_ros::CreateTimerInterface>[m[K’}
+   21 |         tf_buffer_->setCreateTimerInterface([01;31m[Ktimer_interface[m[K);
+      |                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                             [01;31m[K|[m[K
+      |                                             [01;31m[Kint[m[K
+In file included from [01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:266:59:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid tf2_ros::Buffer::setCreateTimerInterface(tf2_ros::CreateTimerInterface::SharedPtr)[m[K’
+  266 |   setCreateTimerInterface([01;36m[KCreateTimerInterface::SharedPtr create_timer_interface[m[K)
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/point_cloud_transformer_node.dir/build.make:76: CMakeFiles/point_cloud_transformer_node.dir/src/point_cloud_transformer_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/point_cloud_transformer_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

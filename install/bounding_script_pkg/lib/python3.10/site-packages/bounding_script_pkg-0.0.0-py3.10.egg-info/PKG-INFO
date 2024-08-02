@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bounding_script_pkg
+Version: 0.0.0
+Summary: A ROS2 package for image processing with a bounding script
+Maintainer: andrei
+Maintainer-email: andrei.n53@yahoo.com
+License: MIT
+Requires-Dist: setuptools

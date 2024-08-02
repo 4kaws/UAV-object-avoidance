@@ -1,0 +1,10 @@
+/home/andrei/ros2_ws/build/point_cloud_transformer/CMakeFiles/uninstall.dir
+/home/andrei/ros2_ws/build/point_cloud_transformer/CMakeFiles/point_cloud_transformer_uninstall.dir
+/home/andrei/ros2_ws/build/point_cloud_transformer/CMakeFiles/point_cloud_transformer_node.dir
+/home/andrei/ros2_ws/build/point_cloud_transformer/CMakeFiles/test.dir
+/home/andrei/ros2_ws/build/point_cloud_transformer/CMakeFiles/edit_cache.dir
+/home/andrei/ros2_ws/build/point_cloud_transformer/CMakeFiles/rebuild_cache.dir
+/home/andrei/ros2_ws/build/point_cloud_transformer/CMakeFiles/list_install_components.dir
+/home/andrei/ros2_ws/build/point_cloud_transformer/CMakeFiles/install.dir
+/home/andrei/ros2_ws/build/point_cloud_transformer/CMakeFiles/install/local.dir
+/home/andrei/ros2_ws/build/point_cloud_transformer/CMakeFiles/install/strip.dir

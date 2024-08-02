@@ -1,0 +1,2 @@
+[console_scripts]
+object_detector = yolov5_ros.object_detector:main

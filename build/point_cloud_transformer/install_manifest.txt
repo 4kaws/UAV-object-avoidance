@@ -1,0 +1,16 @@
+/home/andrei/ros2_ws/install/point_cloud_transformer/lib/point_cloud_transformer/point_cloud_transformer_node
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/ament_index/resource_index/package_run_dependencies/point_cloud_transformer
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/ament_index/resource_index/parent_prefix_path/point_cloud_transformer
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/environment/ament_prefix_path.sh
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/environment/ament_prefix_path.dsv
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/environment/path.sh
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/environment/path.dsv
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/local_setup.bash
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/local_setup.sh
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/local_setup.zsh
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/local_setup.dsv
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/package.dsv
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/ament_index/resource_index/packages/point_cloud_transformer
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/cmake/point_cloud_transformerConfig.cmake
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/cmake/point_cloud_transformerConfig-version.cmake
+/home/andrei/ros2_ws/install/point_cloud_transformer/share/point_cloud_transformer/package.xml

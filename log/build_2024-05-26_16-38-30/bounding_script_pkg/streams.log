@@ -1,0 +1,48 @@
+[1.159s] Invoking command in '/home/andrei/ros2_ws/src/bounding_script_pkg': PYTHONPATH=/home/andrei/ros2_ws/build/bounding_script_pkg/prefix_override:/home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bounding_script_pkg build --build-base /home/andrei/ros2_ws/build/bounding_script_pkg/build install --record /home/andrei/ros2_ws/build/bounding_script_pkg/install.log --single-version-externally-managed
+[1.291s] running egg_info
+[1.299s] writing ../../build/bounding_script_pkg/bounding_script_pkg.egg-info/PKG-INFO
+[1.300s] writing dependency_links to ../../build/bounding_script_pkg/bounding_script_pkg.egg-info/dependency_links.txt
+[1.300s] writing entry points to ../../build/bounding_script_pkg/bounding_script_pkg.egg-info/entry_points.txt
+[1.300s] writing requirements to ../../build/bounding_script_pkg/bounding_script_pkg.egg-info/requires.txt
+[1.300s] writing top-level names to ../../build/bounding_script_pkg/bounding_script_pkg.egg-info/top_level.txt
+[1.317s] reading manifest file '../../build/bounding_script_pkg/bounding_script_pkg.egg-info/SOURCES.txt'
+[1.317s] writing manifest file '../../build/bounding_script_pkg/bounding_script_pkg.egg-info/SOURCES.txt'
+[1.317s] running build
+[1.317s] running build_py
+[1.318s] copying bounding_script_pkg/image_subscriber.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+[1.318s] copying bounding_script_pkg/parse_dae.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+[1.318s] copying bounding_script_pkg/blabber.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+[1.318s] copying bounding_script_pkg/extractPLAYGROUND.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+[1.318s] copying bounding_script_pkg/image_subscriber-without-const-cone.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+[1.319s] copying bounding_script_pkg/__init__.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+[1.319s] /home/andrei/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.319s] !!
+[1.319s] 
+[1.319s]         ********************************************************************************
+[1.319s]         Please avoid running ``setup.py`` directly.
+[1.320s]         Instead, use pypa/build, pypa/installer or other
+[1.320s]         standards-based tools.
+[1.320s] 
+[1.320s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.321s]         ********************************************************************************
+[1.321s] 
+[1.321s] !!
+[1.321s]   self.initialize_options()
+[1.321s] running install
+[1.322s] running install_lib
+[1.331s] byte-compiling /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg/blabber.py to blabber.cpython-310.pyc
+[1.336s]   File "/home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg/blabber.py", line 637
+[1.336s]     ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1.337s]                                                                                                                                                                     ^
+[1.337s] SyntaxError: invalid syntax
+[1.337s] 
+[1.337s] running install_data
+[1.344s] copying resource/bounding_script_pkg -> /home/andrei/ros2_ws/install/bounding_script_pkg/share/ament_index/resource_index/packages
+[1.344s] copying package.xml -> /home/andrei/ros2_ws/install/bounding_script_pkg/share/bounding_script_pkg
+[1.344s] running install_egg_info
+[1.352s] removing '/home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.353s] Copying ../../build/bounding_script_pkg/bounding_script_pkg.egg-info to /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg-0.0.0-py3.10.egg-info
+[1.353s] running install_scripts
+[1.428s] Installing image_subscriber script to /home/andrei/ros2_ws/install/bounding_script_pkg/lib/bounding_script_pkg
+[1.428s] writing list of installed files to '/home/andrei/ros2_ws/build/bounding_script_pkg/install.log'
+[1.452s] Invoked command in '/home/andrei/ros2_ws/src/bounding_script_pkg' returned '0': PYTHONPATH=/home/andrei/ros2_ws/build/bounding_script_pkg/prefix_override:/home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bounding_script_pkg build --build-base /home/andrei/ros2_ws/build/bounding_script_pkg/build install --record /home/andrei/ros2_ws/build/bounding_script_pkg/install.log --single-version-externally-managed

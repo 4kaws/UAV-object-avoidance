@@ -1,0 +1,47 @@
+running egg_info
+creating ../../build/bounding_script_pkg/bounding_script_pkg.egg-info
+writing ../../build/bounding_script_pkg/bounding_script_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/bounding_script_pkg/bounding_script_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/bounding_script_pkg/bounding_script_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/bounding_script_pkg/bounding_script_pkg.egg-info/requires.txt
+writing top-level names to ../../build/bounding_script_pkg/bounding_script_pkg.egg-info/top_level.txt
+writing manifest file '../../build/bounding_script_pkg/bounding_script_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/bounding_script_pkg/bounding_script_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/bounding_script_pkg/bounding_script_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/andrei/ros2_ws/build/bounding_script_pkg/build
+creating /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib
+creating /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+copying bounding_script_pkg/image_subscriber.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+copying bounding_script_pkg/parse_dae.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+copying bounding_script_pkg/blabber.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+copying bounding_script_pkg/extractPLAYGROUND.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+copying bounding_script_pkg/image_subscriber-without-const-cone.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+copying bounding_script_pkg/__init__.py -> /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg
+running install
+running install_lib
+creating /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg
+copying /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg/image_subscriber.py -> /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg
+copying /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg/parse_dae.py -> /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg
+copying /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg/blabber.py -> /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg
+copying /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg/extractPLAYGROUND.py -> /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg
+copying /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg/image_subscriber-without-const-cone.py -> /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg
+copying /home/andrei/ros2_ws/build/bounding_script_pkg/build/lib/bounding_script_pkg/__init__.py -> /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg
+byte-compiling /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg/image_subscriber.py to image_subscriber.cpython-310.pyc
+byte-compiling /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg/parse_dae.py to parse_dae.cpython-310.pyc
+byte-compiling /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg/blabber.py to blabber.cpython-310.pyc
+byte-compiling /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg/extractPLAYGROUND.py to extractPLAYGROUND.cpython-310.pyc
+byte-compiling /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg/image_subscriber-without-const-cone.py to image_subscriber-without-const-cone.cpython-310.pyc
+byte-compiling /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/andrei/ros2_ws/install/bounding_script_pkg/share/ament_index
+creating /home/andrei/ros2_ws/install/bounding_script_pkg/share/ament_index/resource_index
+creating /home/andrei/ros2_ws/install/bounding_script_pkg/share/ament_index/resource_index/packages
+copying resource/bounding_script_pkg -> /home/andrei/ros2_ws/install/bounding_script_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/andrei/ros2_ws/install/bounding_script_pkg/share/bounding_script_pkg
+running install_egg_info
+Copying ../../build/bounding_script_pkg/bounding_script_pkg.egg-info to /home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages/bounding_script_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing image_subscriber script to /home/andrei/ros2_ws/install/bounding_script_pkg/lib/bounding_script_pkg
+writing list of installed files to '/home/andrei/ros2_ws/build/bounding_script_pkg/install.log'

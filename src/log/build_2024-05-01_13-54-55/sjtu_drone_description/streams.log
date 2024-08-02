@@ -1,0 +1,37 @@
+[0.314s] Invoking command in '/home/andrei/ros2_ws/src/build/sjtu_drone_description': /usr/bin/cmake /home/andrei/ros2_ws/src/sjtu_drone/sjtu_drone_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/andrei/ros2_ws/src/install/sjtu_drone_description
+[0.365s] -- The C compiler identification is GNU 11.4.0
+[0.458s] -- The CXX compiler identification is GNU 11.4.0
+[0.473s] -- Detecting C compiler ABI info
+[0.540s] -- Detecting C compiler ABI info - done
+[0.552s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.553s] -- Detecting C compile features
+[0.554s] -- Detecting C compile features - done
+[0.558s] -- Detecting CXX compiler ABI info
+[0.638s] -- Detecting CXX compiler ABI info - done
+[0.649s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.649s] -- Detecting CXX compile features
+[0.650s] -- Detecting CXX compile features - done
+[0.657s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.658s] -- Checking for module 'OGRE'
+[0.673s] --   Found OGRE, version 1.9.0
+[0.710s] -- Checking for module 'OGRE-Terrain'
+[0.723s] --   Found OGRE-Terrain, version 1.9.0
+[0.767s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[0.767s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.767s]   has asked CMake to find a package configuration file provided by
+[0.767s]   "ament_cmake", but CMake did not find one.
+[0.768s] 
+[0.768s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.768s]   any of the following names:
+[0.768s] 
+[0.768s]     ament_cmakeConfig.cmake
+[0.768s]     ament_cmake-config.cmake
+[0.768s] 
+[0.768s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.768s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.768s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.768s]   has been installed.
+[0.768s] 
+[0.768s] [0m
+[0.768s] -- Configuring incomplete, errors occurred!
+[0.768s] See also "/home/andrei/ros2_ws/src/build/sjtu_drone_description/CMakeFiles/CMakeOutput.log".

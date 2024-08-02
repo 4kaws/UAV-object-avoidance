@@ -1,0 +1,3 @@
+[console_scripts]
+image_subscriber = bounding_script_pkg.image_subscriber:main
+

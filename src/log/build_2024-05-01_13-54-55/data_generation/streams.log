@@ -1,0 +1,33 @@
+[0.189s] Invoking command in '/home/andrei/ros2_ws/src/build/data_generation': /usr/bin/cmake /home/andrei/ros2_ws/src/gazebo_dataset_generation/data_generation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/andrei/ros2_ws/src/install/data_generation
+[0.376s] -- The C compiler identification is GNU 11.4.0
+[0.487s] -- The CXX compiler identification is GNU 11.4.0
+[0.503s] -- Detecting C compiler ABI info
+[0.576s] -- Detecting C compiler ABI info - done
+[0.585s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.585s] -- Detecting C compile features
+[0.585s] -- Detecting C compile features - done
+[0.589s] -- Detecting CXX compiler ABI info
+[0.667s] -- Detecting CXX compiler ABI info - done
+[0.680s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.680s] -- Detecting CXX compile features
+[0.681s] -- Detecting CXX compile features - done
+[0.695s] -- Configuring incomplete, errors occurred!
+[0.695s] See also "/home/andrei/ros2_ws/src/build/data_generation/CMakeFiles/CMakeOutput.log".
+[0.696s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.696s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.696s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.696s]   CMake did not find one.
+[0.696s] 
+[0.696s]   Could not find a package configuration file provided by "catkin" with any
+[0.696s]   of the following names:
+[0.696s] 
+[0.696s]     catkinConfig.cmake
+[0.696s]     catkin-config.cmake
+[0.696s] 
+[0.697s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.697s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.697s]   provides a separate development package or SDK, be sure it has been
+[0.697s]   installed.
+[0.697s] 
+[0.697s] [0m
+[0.699s] Invoked command in '/home/andrei/ros2_ws/src/build/data_generation' returned '1': /usr/bin/cmake /home/andrei/ros2_ws/src/gazebo_dataset_generation/data_generation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/andrei/ros2_ws/src/install/data_generation

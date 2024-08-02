@@ -1,0 +1,41 @@
+[0.998s] Invoking command in '/home/andrei/ros2_ws/sjtu_drone/sjtu_drone_bringup': PYTHONPATH=/home/andrei/ros2_ws/build/sjtu_drone_bringup/prefix_override:/home/andrei/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sjtu_drone_bringup build --build-base /home/andrei/ros2_ws/build/sjtu_drone_bringup/build install --record /home/andrei/ros2_ws/build/sjtu_drone_bringup/install.log --single-version-externally-managed
+[1.135s] running egg_info
+[1.143s] writing ../../build/sjtu_drone_bringup/sjtu_drone_bringup.egg-info/PKG-INFO
+[1.143s] writing dependency_links to ../../build/sjtu_drone_bringup/sjtu_drone_bringup.egg-info/dependency_links.txt
+[1.144s] writing entry points to ../../build/sjtu_drone_bringup/sjtu_drone_bringup.egg-info/entry_points.txt
+[1.144s] writing requirements to ../../build/sjtu_drone_bringup/sjtu_drone_bringup.egg-info/requires.txt
+[1.144s] writing top-level names to ../../build/sjtu_drone_bringup/sjtu_drone_bringup.egg-info/top_level.txt
+[1.160s] reading manifest file '../../build/sjtu_drone_bringup/sjtu_drone_bringup.egg-info/SOURCES.txt'
+[1.161s] writing manifest file '../../build/sjtu_drone_bringup/sjtu_drone_bringup.egg-info/SOURCES.txt'
+[1.161s] running build
+[1.161s] running build_py
+[1.161s] copying sjtu_drone_bringup/spawn_drone.py -> /home/andrei/ros2_ws/build/sjtu_drone_bringup/build/lib/sjtu_drone_bringup
+[1.161s] copying sjtu_drone_bringup/__init__.py -> /home/andrei/ros2_ws/build/sjtu_drone_bringup/build/lib/sjtu_drone_bringup
+[1.161s] running install
+[1.162s] /home/andrei/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.162s] !!
+[1.162s] 
+[1.162s]         ********************************************************************************
+[1.162s]         Please avoid running ``setup.py`` directly.
+[1.162s]         Instead, use pypa/build, pypa/installer or other
+[1.162s]         standards-based tools.
+[1.162s] 
+[1.162s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.162s]         ********************************************************************************
+[1.162s] 
+[1.162s] !!
+[1.162s]   self.initialize_options()
+[1.165s] running install_lib
+[1.173s] running install_data
+[1.181s] copying resource/sjtu_drone_bringup -> /home/andrei/ros2_ws/install/sjtu_drone_bringup/share/ament_index/resource_index/packages
+[1.181s] copying package.xml -> /home/andrei/ros2_ws/install/sjtu_drone_bringup/share/sjtu_drone_bringup
+[1.182s] copying launch/sjtu_drone_bringup.launch.py -> /home/andrei/ros2_ws/install/sjtu_drone_bringup/share/sjtu_drone_bringup/launch
+[1.182s] copying launch/sjtu_drone_gazebo.launch.py -> /home/andrei/ros2_ws/install/sjtu_drone_bringup/share/sjtu_drone_bringup/launch
+[1.182s] copying rviz/rviz.rviz -> /home/andrei/ros2_ws/install/sjtu_drone_bringup/share/sjtu_drone_bringup/rviz
+[1.182s] running install_egg_info
+[1.190s] removing '/home/andrei/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages/sjtu_drone_bringup-0.0.0-py3.10.egg-info' (and everything under it)
+[1.190s] Copying ../../build/sjtu_drone_bringup/sjtu_drone_bringup.egg-info to /home/andrei/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages/sjtu_drone_bringup-0.0.0-py3.10.egg-info
+[1.191s] running install_scripts
+[1.266s] Installing spawn_drone script to /home/andrei/ros2_ws/install/sjtu_drone_bringup/lib/sjtu_drone_bringup
+[1.266s] writing list of installed files to '/home/andrei/ros2_ws/build/sjtu_drone_bringup/install.log'
+[1.339s] Invoked command in '/home/andrei/ros2_ws/sjtu_drone/sjtu_drone_bringup' returned '0': PYTHONPATH=/home/andrei/ros2_ws/build/sjtu_drone_bringup/prefix_override:/home/andrei/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sjtu_drone_bringup build --build-base /home/andrei/ros2_ws/build/sjtu_drone_bringup/build install --record /home/andrei/ros2_ws/build/sjtu_drone_bringup/install.log --single-version-externally-managed

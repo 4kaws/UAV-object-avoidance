@@ -1,0 +1,90 @@
+[0.000000] (-) TimerEvent: {}
+[0.000105] (-) JobUnselected: {'identifier': 'bounding_script_pkg'}
+[0.000121] (-) JobUnselected: {'identifier': 'sjtu_drone_bringup'}
+[0.000130] (-) JobUnselected: {'identifier': 'sjtu_drone_description'}
+[0.000137] (-) JobUnselected: {'identifier': 'velodyne_description'}
+[0.000145] (-) JobUnselected: {'identifier': 'velodyne_gazebo_plugins'}
+[0.000153] (-) JobUnselected: {'identifier': 'velodyne_simulator'}
+[0.000160] (-) JobUnselected: {'identifier': 'yolov5_ros'}
+[0.000169] (point_cloud_transformer) JobQueued: {'identifier': 'point_cloud_transformer', 'dependencies': OrderedDict()}
+[0.000180] (point_cloud_transformer) JobStarted: {'identifier': 'point_cloud_transformer'}
+[0.036063] (point_cloud_transformer) JobProgress: {'identifier': 'point_cloud_transformer', 'progress': 'cmake'}
+[0.036289] (point_cloud_transformer) JobProgress: {'identifier': 'point_cloud_transformer', 'progress': 'build'}
+[0.036820] (point_cloud_transformer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andrei/ros2_ws/build/point_cloud_transformer', '--', '-j16', '-l16'], 'cwd': '/home/andrei/ros2_ws/build/point_cloud_transformer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andrei'), ('LC_TIME', 'ro_RO.UTF-8'), ('ROS_PACKAGE_PATH', '/home/andrei/ros2_ws/install/point_cloud_transformer/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andrei/ros2_ws/install/velodyne_gazebo_plugins/lib:/home/andrei/ros2_ws/install/sjtu_drone_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/nvidia-cuda-toolkit/lib64:/usr/lib/nvidia-cuda-toolkit/lib64:'), ('HOME', '/home/andrei'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/andrei/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ro_RO.UTF-8'), ('SYSTEMD_EXEC_PID', '9628'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/andrei/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'andrei'), ('_', '/home/andrei/.local/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/andrei/ros2_ws/install/point_cloud_transformer/lib/x86_64-linux-gnu/pkgconfig:/home/andrei/ros2_ws/install/point_cloud_transformer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andrei'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/lib/nvidia-cuda-toolkit/bin:/usr/lib/nvidia-cuda-toolkit/bin:/home/andrei/miniconda3/condabin:/home/andrei/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/andrei/.local/bin'), ('SESSION_MANAGER', 'local/whitebox:@/tmp/.ICE-unix/5944,unix/whitebox:/tmp/.ICE-unix/5944'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ro_RO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/de5dd741_72bd_4c72_b347_4c35328e6739'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ro_RO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andrei/ros2_ws/install/point_cloud_transformer:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/velodyne_simulator:/home/andrei/ros2_ws/install/velodyne_gazebo_plugins:/home/andrei/ros2_ws/install/velodyne_description:/home/andrei/ros2_ws/install/sjtu_drone_description:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/andrei/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ro_RO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ro_RO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ro_RO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andrei/ros2_ws/build/point_cloud_transformer'), ('LC_ALL', 'en_US.UTF-8'), ('CUDA_HOME', '/usr/lib/nvidia-cuda-toolkit'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/andrei/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages:/home/andrei/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages:/home/andrei/ros2_ws/install/bounding_script_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ro_RO.UTF-8'), ('LC_PAPER', 'ro_RO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andrei/ros2_ws/install/point_cloud_transformer:/home/andrei/ros2_ws/install/velodyne_simulator:/home/andrei/ros2_ws/install/velodyne_gazebo_plugins:/home/andrei/ros2_ws/install/velodyne_description:/home/andrei/ros2_ws/install/sjtu_drone_description:/home/andrei/ros2_ws/install/yolov5_ros:/home/andrei/ros2_ws/install/sjtu_drone_bringup:/home/andrei/ros2_ws/install/bounding_script_pkg:/opt/ros/humble')]), 'shell': False}
+[0.063923] (point_cloud_transformer) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target point_cloud_transformer_node\x1b[0m\n'}
+[0.075322] (point_cloud_transformer) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transformer_node.dir/src/point_cloud_transformer_node.cpp.o\x1b[0m\n'}
+[0.098871] (-) TimerEvent: {}
+[0.188095] (point_cloud_transformer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:5\x1b[m\x1b[K:\n'}
+[0.188258] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.h:32:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_sensor_msgs/tf2_sensor_msgs.hpp instead [\x1b[01;35m\x1b[K-Wcpp\x1b[m\x1b[K]\n'}
+[0.188296] (point_cloud_transformer) StderrLine: {'line': b'   32 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_sensor_msgs/tf2_sensor_msgs.hpp instead\n'}
+[0.188327] (point_cloud_transformer) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[0.199053] (-) TimerEvent: {}
+[0.299236] (-) TimerEvent: {}
+[0.399507] (-) TimerEvent: {}
+[0.499862] (-) TimerEvent: {}
+[0.600208] (-) TimerEvent: {}
+[0.700556] (-) TimerEvent: {}
+[0.800886] (-) TimerEvent: {}
+[0.901229] (-) TimerEvent: {}
+[1.001587] (-) TimerEvent: {}
+[1.101951] (-) TimerEvent: {}
+[1.202274] (-) TimerEvent: {}
+[1.302618] (-) TimerEvent: {}
+[1.402964] (-) TimerEvent: {}
+[1.503243] (-) TimerEvent: {}
+[1.603540] (-) TimerEvent: {}
+[1.690890] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:60:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCreateTimerROS\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.691020] (point_cloud_transformer) StderrLine: {'line': b'   60 |     std::shared_ptr<tf2_ros::\x1b[01;31m\x1b[KCreateTimerROS\x1b[m\x1b[K> timer_interface;\n'}
+[1.691063] (point_cloud_transformer) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.691115] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:60:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.691142] (point_cloud_transformer) StderrLine: {'line': b'   60 |     std::shared_ptr<tf2_ros::CreateTimerROS\x1b[01;31m\x1b[K>\x1b[m\x1b[K timer_interface;\n'}
+[1.691168] (point_cloud_transformer) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.692066] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPointCloudTransformer::PointCloudTransformer()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.692157] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:14:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCreateTimerROS\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.692191] (point_cloud_transformer) StderrLine: {'line': b'   14 |         timer_interface = std::make_shared<tf2_ros::\x1b[01;31m\x1b[KCreateTimerROS\x1b[m\x1b[K>(\n'}
+[1.692220] (point_cloud_transformer) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.692250] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:17:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeTimersInterface::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.692279] (point_cloud_transformer) StderrLine: {'line': b'   17 |         \x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.692312] (point_cloud_transformer) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.692339] (point_cloud_transformer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[1.692365] (point_cloud_transformer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[1.692391] (point_cloud_transformer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:1\x1b[m\x1b[K:\n'}
+[1.692418] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:716:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.692452] (point_cloud_transformer) StderrLine: {'line': b'  716 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[1.692478] (point_cloud_transformer) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.692525] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:716:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.692552] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:17:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.692578] (point_cloud_transformer) StderrLine: {'line': b'   17 |         \x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.692605] (point_cloud_transformer) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.692689] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:21:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros::CreateTimerInterface::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<tf2_ros::CreateTimerInterface>\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[1.692743] (point_cloud_transformer) StderrLine: {'line': b'   21 |         tf_buffer_->setCreateTimerInterface(\x1b[01;31m\x1b[Ktimer_interface\x1b[m\x1b[K);\n'}
+[1.692779] (point_cloud_transformer) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.692805] (point_cloud_transformer) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[1.692831] (point_cloud_transformer) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[Kint\x1b[m\x1b[K\n'}
+[1.692856] (point_cloud_transformer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:4\x1b[m\x1b[K:\n'}
+[1.692881] (point_cloud_transformer) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:266:59:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kvoid tf2_ros::Buffer::setCreateTimerInterface(tf2_ros::CreateTimerInterface::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.692909] (point_cloud_transformer) StderrLine: {'line': b'  266 |   setCreateTimerInterface(\x1b[01;36m\x1b[KCreateTimerInterface::SharedPtr create_timer_interface\x1b[m\x1b[K)\n'}
+[1.692937] (point_cloud_transformer) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.703705] (-) TimerEvent: {}
+[1.804009] (-) TimerEvent: {}
+[1.904344] (-) TimerEvent: {}
+[2.004570] (-) TimerEvent: {}
+[2.104887] (-) TimerEvent: {}
+[2.205262] (-) TimerEvent: {}
+[2.305590] (-) TimerEvent: {}
+[2.405908] (-) TimerEvent: {}
+[2.506242] (-) TimerEvent: {}
+[2.606578] (-) TimerEvent: {}
+[2.706899] (-) TimerEvent: {}
+[2.807200] (-) TimerEvent: {}
+[2.907469] (-) TimerEvent: {}
+[3.007798] (-) TimerEvent: {}
+[3.108162] (-) TimerEvent: {}
+[3.208424] (-) TimerEvent: {}
+[3.294023] (point_cloud_transformer) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/point_cloud_transformer_node.dir/build.make:76: CMakeFiles/point_cloud_transformer_node.dir/src/point_cloud_transformer_node.cpp.o] Error 1\n'}
+[3.294341] (point_cloud_transformer) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/point_cloud_transformer_node.dir/all] Error 2\n'}
+[3.294415] (point_cloud_transformer) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.296443] (point_cloud_transformer) CommandEnded: {'returncode': 2}
+[3.308496] (-) TimerEvent: {}
+[3.348340] (point_cloud_transformer) JobEnded: {'identifier': 'point_cloud_transformer', 'rc': 2}
+[3.358702] (-) EventReactorShutdown: {}

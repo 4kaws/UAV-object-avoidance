@@ -1,0 +1,38 @@
+[0.911s] Invoking command in '/home/andrei/ros2_ws/src/yolov5_ros': PYTHONPATH=/home/andrei/ros2_ws/build/yolov5_ros/prefix_override:/home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolov5_ros build --build-base /home/andrei/ros2_ws/build/yolov5_ros/build install --record /home/andrei/ros2_ws/build/yolov5_ros/install.log --single-version-externally-managed
+[1.055s] running egg_info
+[1.078s] writing ../../build/yolov5_ros/yolov5_ros.egg-info/PKG-INFO
+[1.078s] writing dependency_links to ../../build/yolov5_ros/yolov5_ros.egg-info/dependency_links.txt
+[1.078s] writing entry points to ../../build/yolov5_ros/yolov5_ros.egg-info/entry_points.txt
+[1.079s] writing requirements to ../../build/yolov5_ros/yolov5_ros.egg-info/requires.txt
+[1.079s] writing top-level names to ../../build/yolov5_ros/yolov5_ros.egg-info/top_level.txt
+[1.089s] reading manifest file '../../build/yolov5_ros/yolov5_ros.egg-info/SOURCES.txt'
+[1.090s] writing manifest file '../../build/yolov5_ros/yolov5_ros.egg-info/SOURCES.txt'
+[1.090s] /home/andrei/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.090s] !!
+[1.091s] 
+[1.091s]         ********************************************************************************
+[1.091s]         Please avoid running ``setup.py`` directly.
+[1.091s]         Instead, use pypa/build, pypa/installer or other
+[1.091s]         standards-based tools.
+[1.091s] 
+[1.092s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.092s]         ********************************************************************************
+[1.092s] 
+[1.092s] !!
+[1.092s]   self.initialize_options()
+[1.092s] running build
+[1.092s] running build_py
+[1.092s] copying yolov5_ros/object_detector.py -> /home/andrei/ros2_ws/build/yolov5_ros/build/lib/yolov5_ros
+[1.092s] copying yolov5_ros/__init__.py -> /home/andrei/ros2_ws/build/yolov5_ros/build/lib/yolov5_ros
+[1.093s] running install
+[1.093s] running install_lib
+[1.099s] running install_data
+[1.107s] copying package.xml -> /home/andrei/ros2_ws/install/yolov5_ros/share/yolov5_ros
+[1.107s] copying launch/yolov5_launch.py -> /home/andrei/ros2_ws/install/yolov5_ros/share/yolov5_ros/launch
+[1.107s] running install_egg_info
+[1.119s] removing '/home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros-0.0.1-py3.10.egg-info' (and everything under it)
+[1.119s] Copying ../../build/yolov5_ros/yolov5_ros.egg-info to /home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages/yolov5_ros-0.0.1-py3.10.egg-info
+[1.120s] running install_scripts
+[1.192s] Installing object_detector script to /home/andrei/ros2_ws/install/yolov5_ros/lib/yolov5_ros
+[1.193s] writing list of installed files to '/home/andrei/ros2_ws/build/yolov5_ros/install.log'
+[1.240s] Invoked command in '/home/andrei/ros2_ws/src/yolov5_ros' returned '0': PYTHONPATH=/home/andrei/ros2_ws/build/yolov5_ros/prefix_override:/home/andrei/ros2_ws/install/yolov5_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolov5_ros build --build-base /home/andrei/ros2_ws/build/yolov5_ros/build install --record /home/andrei/ros2_ws/build/yolov5_ros/install.log --single-version-externally-managed

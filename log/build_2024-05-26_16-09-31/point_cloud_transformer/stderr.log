@@ -1,0 +1,36 @@
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:39:28:[m[K [01;31m[Kerror: [m[K‘[01m[KBuffer[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+   39 |   std::shared_ptr<tf2_ros::[01;31m[KBuffer[m[K> tf_buffer_;
+      |                            [01;31m[K^~~~~~[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:39:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   39 |   std::shared_ptr<tf2_ros::Buffer[01;31m[K>[m[K tf_buffer_;
+      |                                  [01;31m[K^[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:[m[K In constructor ‘[01m[KPointCloudTransformer::PointCloudTransformer()[m[K’:
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:11:44:[m[K [01;31m[Kerror: [m[K‘[01m[KBuffer[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+   11 |     tf_buffer_ = std::make_shared<tf2_ros::[01;31m[KBuffer[m[K>(this->get_clock());
+      |                                            [01;31m[K^~~~~~[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:11:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(rclcpp::Clock::SharedPtr)[m[K’
+   11 |     tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock()[01;31m[K)[m[K;
+      |                                                                     [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:716:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  716 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:716:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:11:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   11 |     tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock()[01;31m[K)[m[K;
+      |                                                                     [01;31m[K^[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:15:15:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   15 |     tf_buffer_[01;31m[K->[m[KsetCreateTimerInterface(timer_interface);
+      |               [01;31m[K^~[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:16:66:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+   16 |     tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*[01;31m[Ktf_buffer_[m[K);
+      |                                                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:[m[K In member function ‘[01m[Kvoid PointCloudTransformer::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/andrei/ros2_ws/src/point_cloud_transformer/src/point_cloud_transformer_node.cpp:28:37:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   28 |       transform_stamped = tf_buffer_[01;31m[K->[m[KlookupTransform("base_link", msg->header.frame_id, tf2::TimePointZero);
+      |                                     [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/point_cloud_transformer_node.dir/build.make:76: CMakeFiles/point_cloud_transformer_node.dir/src/point_cloud_transformer_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/point_cloud_transformer_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

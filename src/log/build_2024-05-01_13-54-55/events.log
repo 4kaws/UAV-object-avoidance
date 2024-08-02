@@ -1,0 +1,98 @@
+[0.000000] (-) TimerEvent: {}
+[0.000236] (bounding_script_pkg) JobQueued: {'identifier': 'bounding_script_pkg', 'dependencies': OrderedDict()}
+[0.000258] (data_generation) JobQueued: {'identifier': 'data_generation', 'dependencies': OrderedDict()}
+[0.000271] (sjtu_drone_bringup) JobQueued: {'identifier': 'sjtu_drone_bringup', 'dependencies': OrderedDict()}
+[0.000282] (sjtu_drone_description) JobQueued: {'identifier': 'sjtu_drone_description', 'dependencies': OrderedDict()}
+[0.000295] (yolov5_ros) JobQueued: {'identifier': 'yolov5_ros', 'dependencies': OrderedDict()}
+[0.000307] (bounding_script_pkg) JobStarted: {'identifier': 'bounding_script_pkg'}
+[0.021882] (data_generation) JobStarted: {'identifier': 'data_generation'}
+[0.035620] (sjtu_drone_bringup) JobStarted: {'identifier': 'sjtu_drone_bringup'}
+[0.051049] (sjtu_drone_description) JobStarted: {'identifier': 'sjtu_drone_description'}
+[0.061397] (yolov5_ros) JobStarted: {'identifier': 'yolov5_ros'}
+[0.099534] (-) TimerEvent: {}
+[0.200049] (-) TimerEvent: {}
+[0.210008] (data_generation) JobProgress: {'identifier': 'data_generation', 'progress': 'cmake'}
+[0.210379] (data_generation) Command: {'cmd': ['/usr/bin/cmake', '/home/andrei/ros2_ws/src/gazebo_dataset_generation/data_generation', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/andrei/ros2_ws/src/install/data_generation'], 'cwd': '/home/andrei/ros2_ws/src/build/data_generation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andrei'), ('LC_TIME', 'ro_RO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/andrei'), ('OLDPWD', '/home/andrei/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ro_RO.UTF-8'), ('SYSTEMD_EXEC_PID', '5061'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'andrei'), ('_', '/home/andrei/.local/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andrei'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/andrei/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/andrei/.local/bin'), ('SESSION_MANAGER', 'local/whitebox:@/tmp/.ICE-unix/4994,unix/whitebox:/tmp/.ICE-unix/4994'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ro_RO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45755737_3ce6_4c94_a352_24ecd4c6326e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ro_RO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ro_RO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ro_RO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ro_RO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andrei/ros2_ws/src/build/data_generation'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ro_RO.UTF-8'), ('LC_PAPER', 'ro_RO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.300260] (-) TimerEvent: {}
+[0.363981] (sjtu_drone_description) JobProgress: {'identifier': 'sjtu_drone_description', 'progress': 'cmake'}
+[0.364133] (sjtu_drone_description) Command: {'cmd': ['/usr/bin/cmake', '/home/andrei/ros2_ws/src/sjtu_drone/sjtu_drone_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/andrei/ros2_ws/src/install/sjtu_drone_description'], 'cwd': '/home/andrei/ros2_ws/src/build/sjtu_drone_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andrei'), ('LC_TIME', 'ro_RO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/andrei'), ('OLDPWD', '/home/andrei/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ro_RO.UTF-8'), ('SYSTEMD_EXEC_PID', '5061'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'andrei'), ('_', '/home/andrei/.local/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andrei'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/andrei/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/andrei/.local/bin'), ('SESSION_MANAGER', 'local/whitebox:@/tmp/.ICE-unix/4994,unix/whitebox:/tmp/.ICE-unix/4994'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ro_RO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45755737_3ce6_4c94_a352_24ecd4c6326e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ro_RO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ro_RO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ro_RO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ro_RO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andrei/ros2_ws/src/build/sjtu_drone_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ro_RO.UTF-8'), ('LC_PAPER', 'ro_RO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.397769] (data_generation) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400539] (-) TimerEvent: {}
+[0.415809] (sjtu_drone_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.500799] (-) TimerEvent: {}
+[0.508849] (sjtu_drone_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.509217] (data_generation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.523166] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.524069] (data_generation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.591598] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.597662] (data_generation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.601020] (-) TimerEvent: {}
+[0.603115] (sjtu_drone_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.603922] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.604810] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.606299] (data_generation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.606672] (data_generation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.607129] (data_generation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.608887] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.610762] (data_generation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.688646] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.688936] (data_generation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.699707] (sjtu_drone_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.700141] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.700869] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.701163] (-) TimerEvent: {}
+[0.701553] (data_generation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.702036] (data_generation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.702681] (data_generation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.707941] (sjtu_drone_description) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[0.708638] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[0.716966] (data_generation) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.717254] (data_generation) StdoutLine: {'line': b'See also "/home/andrei/ros2_ws/src/build/data_generation/CMakeFiles/CMakeOutput.log".\n'}
+[0.717399] (data_generation) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:10 (find_package):\n'}
+[0.717517] (data_generation) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.717624] (data_generation) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.717718] (data_generation) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.717808] (data_generation) StderrLine: {'line': b'\n'}
+[0.717898] (data_generation) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.717990] (data_generation) StderrLine: {'line': b'  of the following names:\n'}
+[0.718082] (data_generation) StderrLine: {'line': b'\n'}
+[0.718171] (data_generation) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.718260] (data_generation) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.718350] (data_generation) StderrLine: {'line': b'\n'}
+[0.718438] (data_generation) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.718535] (data_generation) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.718631] (data_generation) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.718726] (data_generation) StderrLine: {'line': b'  installed.\n'}
+[0.718817] (data_generation) StderrLine: {'line': b'\n'}
+[0.718905] (data_generation) StderrLine: {'line': b'\x1b[0m\n'}
+[0.720076] (data_generation) CommandEnded: {'returncode': 1}
+[0.724448] (sjtu_drone_description) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[0.760920] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'OGRE-Terrain'\n"}
+[0.762076] (data_generation) JobEnded: {'identifier': 'data_generation', 'rc': 1}
+[0.773575] (sjtu_drone_description) StdoutLine: {'line': b'--   Found OGRE-Terrain, version 1.9.0\n'}
+[0.801335] (-) TimerEvent: {}
+[0.818060] (sjtu_drone_description) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:15 (find_package):\n'}
+[0.818346] (sjtu_drone_description) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.818476] (sjtu_drone_description) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.818581] (sjtu_drone_description) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.818682] (sjtu_drone_description) StderrLine: {'line': b'\n'}
+[0.818783] (sjtu_drone_description) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.818990] (sjtu_drone_description) StderrLine: {'line': b'  any of the following names:\n'}
+[0.819098] (sjtu_drone_description) StderrLine: {'line': b'\n'}
+[0.819157] (sjtu_drone_description) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.819209] (sjtu_drone_description) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.819261] (sjtu_drone_description) StderrLine: {'line': b'\n'}
+[0.819309] (sjtu_drone_description) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.819355] (sjtu_drone_description) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.819401] (sjtu_drone_description) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.819451] (sjtu_drone_description) StderrLine: {'line': b'  has been installed.\n'}
+[0.819501] (sjtu_drone_description) StderrLine: {'line': b'\n'}
+[0.819551] (sjtu_drone_description) StderrLine: {'line': b'\x1b[0m\n'}
+[0.819602] (sjtu_drone_description) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.819663] (sjtu_drone_description) StdoutLine: {'line': b'See also "/home/andrei/ros2_ws/src/build/sjtu_drone_description/CMakeFiles/CMakeOutput.log".\n'}
+[0.821976] (sjtu_drone_description) JobEnded: {'identifier': 'sjtu_drone_description', 'rc': 'SIGINT'}
+[0.901406] (-) TimerEvent: {}
+[0.952821] (sjtu_drone_bringup) JobEnded: {'identifier': 'sjtu_drone_bringup', 'rc': 'SIGINT'}
+[0.953214] (bounding_script_pkg) JobEnded: {'identifier': 'bounding_script_pkg', 'rc': 'SIGINT'}
+[0.953452] (yolov5_ros) JobEnded: {'identifier': 'yolov5_ros', 'rc': 'SIGINT'}
+[0.963419] (-) EventReactorShutdown: {}

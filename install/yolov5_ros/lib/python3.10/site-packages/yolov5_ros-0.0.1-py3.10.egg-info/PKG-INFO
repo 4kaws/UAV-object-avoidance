@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: yolov5_ros
+Version: 0.0.1
+Summary: YOLOv5 ROS2 Object Detection Node
+Maintainer: Andrei Necula
+Maintainer-email: andrei.n53@yahoo.com
+License: MIT
+Requires-Dist: setuptools
