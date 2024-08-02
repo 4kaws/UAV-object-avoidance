@@ -1,1 +1,5 @@
 # UAV-object-avoidance
+
+The project focuses on the autonomous navigation of drones in complex and dynamic environments. To achieve its goal of traveling a route from a specific location to a final point, the drone will need to implement several objectives. In this context, YOLOv5 will be used to create a neural network model that will be trained with custom data, aiming to obtain 2D bounding boxes. Then, a LiDAR sensor will be used to provide information about the surrounding objects in the form of points projected onto them. These points will be associated with each other based on their density using a machine learning library called sklearn, which provides the DBSCAN algorithm for this point association. The associated points are checked to see if they lie within the 2D bounding boxes and, if they do, they are subsequently transformed into 3D bounding boxes. In the final phase, these 3D bounding boxes are avoided using the Improved Dynamic Window Approach algorithm.
+
+For this project I've used a UAV simulator which you can find here: https://github.com/NovoG93/sjtu_drone.
